@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <link rel="stylesheet" href="./Animation.css" />
+    <link rel="stylesheet" href="./bootstrap-icons.css" />
+  </head>
+  <body>
+    <h1 style="margin-bottom: 100px">Glowing Cube</h1>
+    <!-- awal glowing cube -->
+    <div class="cube">
+      <div class="top"></div>
+      <div>
+        <span style="--i: 0"></span>
+        <span style="--i: 1"></span>
+        <span style="--i: 2"></span>
+        <span style="--i: 3"></span>
+      </div>
+    </div>
+    <!-- akhir glowing cube -->
+
+    <h1 style="margin-top: 200px">Button Menu 1</h1>
+    <!-- awal button menu 1 -->
+    <div class="btn-menu-1">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <!-- akhir button menu 1 -->
+
+    <h1 style="margin-top: 10px">Button Menu 2</h1>
+    <!-- awal button menu 2 -->
+    <div class="btn-menu-2">
+      <div class="toggle"><i class="bi bi-plus"></i></div>
+      <li style="--i: 0">
+        <a href="javascript:void(0);"><i class="bi bi-house"></i></a>
+      </li>
+      <li style="--i: 1">
+        <a href="javascript:void(0);"><i class="bi bi-person"></i></a>
+      </li>
+      <li style="--i: 2">
+        <a href="javascript:void(0);"><i class="bi bi-gear"></i></a>
+      </li>
+      <li style="--i: 3">
+        <a href="javascript:void(0);"><i class="bi bi-envelope"></i></a>
+      </li>
+      <li style="--i: 4">
+        <a href="javascript:void(0);"><i class="bi bi-key"></i></a>
+      </li>
+      <li style="--i: 5">
+        <a href="javascript:void(0);"><i class="bi bi-camera-video"></i></a>
+      </li>
+      <li style="--i: 6">
+        <a href="javascript:void(0);"><i class="bi bi-controller"></i></a>
+      </li>
+      <li style="--i: 7">
+        <a href="javascript:void(0);"><i class="bi bi-camera"></i></a>
+      </li>
+    </div>
+    <!-- akhir button menu 2 -->
+
+    <h1 style="margin-bottom: 50px">Navigasi 1</h1>
+    <!-- awal nav 1 -->
+    <div class="nav-1">
+      <ul>
+        <li class="list active">
+          <a href="javascript:void(0);">
+            <span class="icon"><i class="bi bi-house"></i></span>
+            <span class="text">Home</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="javascript:void(0);">
+            <span class="icon"><i class="bi bi-person"></i></span>
+            <span class="text">Profile</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="javascript:void(0);">
+            <span class="icon"><i class="bi bi-envelope"></i></span>
+            <span class="text">Messages</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="javascript:void(0);">
+            <span class="icon"><i class="bi bi-camera"></i></span>
+            <span class="text">Photos</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="javascript:void(0);">
+            <span class="icon"><i class="bi bi-gear"></i></span>
+            <span class="text">Settings</span>
+          </a>
+        </li>
+        <div class="indicator"></div>
+      </ul>
+    </div>
+    <!-- akhir nav 1 -->
+
+    <h1 style="margin-bottom: 50px">Navigasi 2</h1>
+    <!-- awal nav 2 -->
+    <div class="nav-2">
+      <ul>
+        <li class="list active">
+          <a href="javascript:void(0);">
+            <span class="icon"><i class="bi bi-house"></i></span>
+            <span class="text">Home</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="javascript:void(0);">
+            <span class="icon"><i class="bi bi-person"></i></span>
+            <span class="text">Profile</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="javascript:void(0);">
+            <span class="icon"><i class="bi bi-envelope"></i></span>
+            <span class="text">Messages</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="javascript:void(0);">
+            <span class="icon"><i class="bi bi-camera"></i></span>
+            <span class="text">Photos</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="javascript:void(0);">
+            <span class="icon"><i class="bi bi-gear"></i></span>
+            <span class="text">Settings</span>
+          </a>
+        </li>
+        <div class="indicator"></div>
+      </ul>
+    </div>
+    <!-- akhir nav 2 -->
+
+    <h1 style="margin-bottom: 150px">Balance Animation</h1>
+    <!-- awal balance animation -->
+    <div class="container-balance">
+      <div class="loader-balance">
+        <div class="ball-balance"></div>
+      </div>
+    </div>
+    <!-- akhir balance animation -->
+
+    <h1 style="margin-bottom: 10px; margin-top: 600px;">Product Flip</h1>
+    <!-- awal product flip -->
+    <div class="card-flip">
+      <div class="cover-flip">
+          <img src="./watch.png">
+      </div>
+      <div class="details-flip">
+        <img src="./watch2.png" width="300"/>
+          <h3>New Apple Watch</h3>
+          <h2><sup>$</sup>450</h2>
+          <a href="#">Buy Now</a>
+      </div>
+    </div>
+    <!-- akhir product flip -->
+
+    <script>
+      // mulai nav-1
+      const list1 = document.querySelectorAll(".nav-1 .list");
+      function activeLinkNav1() {
+        list1.forEach((element) => element.classList.remove("active"));
+        this.classList.add("active");
+      }
+      list1.forEach((element) => element.addEventListener("click", activeLinkNav1));
+      // akhir nav-1
+
+      // mulai nav-2
+      const list2 = document.querySelectorAll(".nav-2 .list");
+      function activeLink() {
+        list2.forEach((element) => element.classList.remove("active"));
+        this.classList.add("active");
+      }
+      list2.forEach((element) => element.addEventListener("click", activeLink));
+      // akhir nav-2
+
+      // awal button menu 1
+      const btnMenu1 = document.querySelector(".btn-menu-1");
+      btnMenu1.onclick = function () {
+        btnMenu1.classList.toggle("active");
+      };
+      // akhir button menu 1
+
+      // awal button menu 2
+      const btnMenu2Toggle = document.querySelector(".btn-menu-2 .toggle");
+      const btnMenu2 = document.querySelector(".btn-menu-2");
+      btnMenu2Toggle.onclick = function () {
+        btnMenu2.classList.toggle("active");
+      };
+      // akhir button menu 2
+    </script>
+  </body>
+</html>
